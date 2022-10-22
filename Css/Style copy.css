@@ -1,0 +1,225 @@
+.bodyTienda{
+    background-color: antiquewhite;
+}
+
+
+
+
+
+.TituloProductos{
+    display: grid;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #004603;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+  
+
+}
+
+.Enlaces{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(4,auto);
+    row-gap: 150px;
+    
+    list-style: none;
+}
+
+
+.Enlaces-Item{
+    justify-content: center;
+    background-color:bisque;
+    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    animation: fadeIn;
+    animation-duration: 20s;
+
+}
+
+.Enlaces-Item-Texto{
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+        
+
+
+}
+
+.ImagenProductos{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+
+
+@media screen and (min-width: 320px) {
+
+    .Enlaces{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(4,auto);
+        
+        
+        list-style: none;
+    }
+    .Enlaces-Item{
+        justify-content: center;
+        
+        
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        animation: fadeIn;
+        animation-duration: 2s;
+    
+    }
+    
+
+    .navTienda{
+        display: flex;
+        justify-content: center;
+        background-color: #042D00;
+        width: 100%;
+        height: 34px;
+        margin-top: 100px;
+        border-radius: 30px;
+    }
+
+    .nav_Tienda_Menu_Texto{
+        font-size: 0.6em;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+
+    .Enlaces-Item-Texto{
+        color: #fff;
+        font-size: 1.5em;
+    
+        text-decoration: none;
+    
+    }
+    .Enlaces-Item-Texto:hover{
+        color: #fff;
+    }
+
+   
+    .TituloProductos{
+        display: grid;
+        justify-content: center;
+        font-size: 1.5em;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #004603;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        text-align: center;
+        
+    
+    }
+    .Titulo{
+        font-size: 1em;
+    }
+
+    .ImagenProductos{
+        height: 200px;
+        width: 200px;
+    }
+    
+   
+}
+
+
+
+
+@media screen and (min-width: 1200px){
+    .Enlaces{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4,400px);
+        grid-template-rows: repeat(4,auto);
+        margin-bottom: 70px;
+        
+        list-style: none;
+    }
+    .Enlaces-Item{
+        justify-content: center;
+        
+       
+        width: 350px;
+        height: 380px;
+        text-align: center;
+        animation: fadeIn;
+        animation-duration: 2s;
+    
+    }
+    
+
+    .navTienda{
+        display: flex;
+        justify-content: center;
+        background-color: #042D00;
+        width: 100%;
+        height: 34px;
+        margin-top: 95px;
+        
+        
+        border-radius: 30px; 
+    }
+    .Enlaces-Item-Texto{
+        color: #fff;
+        font-size: 2em;
+    
+        text-decoration: none;
+    
+    }
+
+    .nav_Tienda_Menu_Texto{
+        font-size: 1em;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+    }
+
+   
+    .TituloProductos{
+        display: grid;
+        justify-content: center;
+        font-size: 2.5em;
+        font-family: 'Times New Roman', Times, serif,bold;
+        background-color: #004603;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        text-align: center;
+        
+    
+    }
+    .Titulo{
+        font-size: 2em;
+    }
+
+    .ImagenProductos{
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+    }
+    
+  
+    
+
+   
+
+}

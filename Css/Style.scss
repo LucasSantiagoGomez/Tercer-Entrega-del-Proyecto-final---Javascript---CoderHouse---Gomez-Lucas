@@ -1,0 +1,732 @@
+.body{
+    background-color: #faebd7;
+}
+
+
+
+.header{
+    grid-area: header;
+}
+
+.header{   
+    width: 100%;
+    position: fixed;
+    
+    top: 0;
+    left: 0;
+    .Logo{
+        height: 75px;
+        width: 87px;
+
+    }
+    .Titulo{
+    display: flex;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 15px;
+    margin-right: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+    }
+    
+    .nav-items{
+        display: flex;
+        padding: 12px 8px;
+        .nav-top-links{
+            color: #fff;
+            list-style: none;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            &:hover{
+                color:#fff;
+                background-color: #745300;
+                border-radius: 10px;
+                transition: 0.5s;
+
+            }  
+        }
+    }
+
+    .nav-item{
+        color: #fff;
+        &:hover{
+            color: #745300;
+        }
+        
+    }
+
+    .nav-link{
+        color: #fff;
+        &:hover{
+            color: #fff;
+
+        }
+
+    }
+
+    .dropdown-menu{
+        background-color:#745300;
+        .dropdown-item{
+            color: #fff;
+            &:hover{
+                background-color:#004603;
+            }
+
+        }
+
+    }
+
+    .navbar-expand-lg{
+        background-color: #042D00;
+     }
+    
+   
+    
+    
+}
+
+/*TIENDA*/
+.bodyTienda{
+    background-color: antiquewhite;
+}
+
+
+
+
+
+.TituloProductos{
+    display: grid;
+    justify-content: center;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #004603;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 60px;
+  
+
+}
+
+.Contenido-Carrito{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(2,auto);
+    row-gap: 150px;
+    
+    list-style: none;
+}
+
+
+.CartadeCompra{
+    justify-content: center;
+    background-color:bisque;
+    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    animation: fadeIn;
+    animation-duration: 20s;
+
+}
+
+.Enlaces-Item-Texto{
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+        
+
+
+}
+
+.ImagenProductos{
+    height: 200px;
+    width: 200px;
+}
+
+
+
+/****************Media Queries Tienda*********************/
+
+@media screen and (min-width: 320px) {
+
+    .Contenido-Carrito{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(4,auto);
+        
+        
+        list-style: none;
+    }
+    .CartadeCompra{
+        justify-content: center;
+        
+        
+        width: 250px;
+        height: 200px;
+        text-align: center;
+        animation: fadeIn;
+        animation-duration: 2s;
+    
+    }
+    
+
+    .navTienda{
+        display: flex;
+        justify-content: center;
+        background-color: #042D00;
+        width: 100%;
+        height: 34px;
+        margin-top: 100px;
+        border-radius: 30px;
+    }
+
+    .nav_Tienda_Menu_Texto{
+        font-size: 0.6em;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+
+    .Enlaces-Item-Texto{
+        color: #fff;
+        font-size: 1.5em;
+    
+        text-decoration: none;
+    
+    }
+    .Enlaces-Item-Texto:hover{
+        color: #fff;
+    }
+
+   
+    .TituloProductos{
+        display: grid;
+        justify-content: center;
+        font-size: 1.5em;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #004603;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        text-align: center;
+        
+    
+    }
+    .Titulo{
+        font-size: 1em;
+    }
+
+    .ImagenProductos{
+        height: 200px;
+        width: 200px;
+    }
+    
+   
+}
+
+
+
+
+@media screen and (min-width: 1200px){
+    .Contenido-Carrito{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4,400px);
+        grid-template-rows: repeat(4,auto);
+        margin-top: 100px;
+        
+        list-style: none;
+    }
+    .CartadeCompra{
+        justify-content: center;
+        
+       
+        width: 350px;
+        height: 380px;
+        text-align: center;
+        animation: fadeIn;
+        animation-duration: 2s;
+    
+    }
+    
+
+    .navTienda{
+        display: flex;
+        justify-content: center;
+        background-color: #042D00;
+        width: 100%;
+        height: 34px;
+        margin-top: 95px;
+        
+        
+        border-radius: 30px; 
+    }
+    .Enlaces-Item-Texto{
+        color: #fff;
+        font-size: 2em;
+    
+        text-decoration: none;
+    
+    }
+
+    .nav_Tienda_Menu_Texto{
+        font-size: 1em;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+    }
+
+   
+    .TituloProductos{
+        display: grid;
+        justify-content: center;
+        font-size: 2.5em;
+        font-family: 'Times New Roman', Times, serif,bold;
+        background-color: #004603;
+        width: 100%;
+        height: 50px;
+        color: #fff;
+        text-align: center;
+        
+    
+    }
+    .Titulo{
+        font-size: 2em;
+    }
+
+    .ImagenProductos{
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+    }
+    
+  
+}
+
+/*********************Footer*****************/
+
+.footer{
+    grid-area:footer;
+}
+
+
+
+footer{
+    display: grid;
+    grid-template-rows: repeat(1,auto);
+    grid-template-columns: repeat(2,auto);
+    
+   
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #042D00;
+    height: 350px;
+    width: 100%;
+    margin-top: 100px;
+   
+
+         .Menu__Footer{
+            
+            list-style: none;
+            width: 100%;
+            text-align: center;
+
+            .Menu__Footer__ItemUno{
+                
+                  
+                padding: 8px 12px;
+                border-radius: 30px;
+                .Footer__Texto{
+                    color: #fff;
+                    text-decoration: none;
+                    list-style: none;
+                    font-size: 1.2em;
+                    
+
+                }
+              
+
+            }
+         }
+
+         .RedesTexto{
+            color: white;
+            font-size: 1.5em;
+
+         }
+
+
+         .Menu__FooterDos{
+           
+            list-style: none;
+            text-align: center;           
+               .Menu__Footer__ItemDos{
+                padding: 8px 12px;
+                border-radius: 30px;
+              
+
+                .IconoFooter{
+    
+                    height: 50px;
+                    width: 50px;
+                    
+                    
+                }
+                .IconoFooter2{
+                    height: 60px;
+                    width: 60px;
+                    
+                    
+                }
+                
+                .IconoFooter3{
+                    height: 60px;
+                    width: 60px;
+                    
+                    
+                }
+               }   
+            }            
+         }
+
+
+
+
+
+
+/************************MEDIA QUERIES FOOTER*****************/
+
+@media screen and (min-width:320px) {
+    .Footer{
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(5,auto);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #042D00;
+        height: 550px;
+        width: 100%;
+        align-content: center;
+        
+    
+         
+        
+    }
+    .Menu__Footer{
+        
+       
+        list-style: none;
+        width: 100%;
+        
+        text-align: center;
+        
+          
+        
+    }
+    
+    .Menu__Footer__ItemUno{
+       
+    
+        
+        padding: 8px 8px;
+        height: 30px;
+        border-radius: 30px;
+        
+    }
+    
+ .RedesTexto{
+    font-size: 0.5em;
+ }
+    
+    .Footer__Texto{
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+        font-size: 0.9em;
+        
+        
+    }
+
+    .Footer__Texto:hover{
+        color: #fff;
+
+    }
+    
+    
+    
+    
+    .Menu__FooterDos{
+        list-style: none;
+        text-align: center;  
+    }
+    
+    .Menu__Footer__ItemDos{ 
+        height: 60px;
+        border-radius: 30px;
+    
+    }
+  
+
+    .IconoFooter{
+    
+        height: 40px;
+        width: 40px;
+        
+    }
+    .IconoFooter2{
+        height: 40px;
+        width: 40px;
+        
+        
+    }
+    
+    .IconoFooter3{
+        height: 40px;
+        width: 40px;
+        
+        
+    }
+    
+    .asideCarousel{
+        display: flex;
+        justify-content: center;
+    
+        #carouselExampleCaptions{
+            width: 100%;
+            
+    
+        }
+        .carousel-item{
+            height: 250px;
+        }
+        .textoCarousel{
+            font-size: 1em;
+        }
+      
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1200px){
+    .Footer{
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        grid-template-rows: repeat(1,auto);
+        
+        
+        
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #042D00;
+        height: 350px;
+        width: 100%;
+        align-content: center;
+        
+    
+         
+        
+    }
+    .Menu__Footer{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(3,auto);
+       
+        list-style: none;
+        width: 100%;
+        
+        text-align: center;
+        
+          
+        
+    }
+    
+    .Menu__Footer__ItemUno{
+        
+       
+        
+        padding: 8px 12px;
+        height: 30px;
+        border-radius: 30px;
+        
+    }
+    
+    
+    
+    .Footer__Texto{
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+        font-size: 1.2em;
+        
+    }
+    
+    
+    
+    
+    .Menu__FooterDos{
+        
+        
+        justify-content: space-between;
+        list-style: none;
+        text-align: center;
+        
+        
+    }
+    
+    .Menu__Footer__ItemDos{
+        
+        padding: 8px 12px;
+        height: 60px;
+        border-radius: 30px;
+    
+    }
+    
+
+    .IconoFooter{
+    
+        height: 50px;
+        width: 50px;
+        
+    }
+    .IconoFooter2{
+        height: 60px;
+        width: 60px;
+        
+        
+    }
+    
+    .IconoFooter3{
+        height: 60px;
+        width: 60px;
+        
+        
+    }
+
+    .asideCarousel{
+        display: flex;
+        justify-content: center;
+        
+    
+        #carouselExampleCaptions{
+            width: 100%;
+            margin-top: 100px;
+
+            
+    
+        }
+        .carousel-item{
+            height: 500px;
+        }
+
+        .textoCarousel{
+            font-size: 2.5em;
+        }
+    }
+
+} 
+
+
+
+/*VENTANA DEL CARRITO*/
+.VentanaCarrito{
+    background-color:#004603;
+    width: 30%;
+    height: 500px;
+    margin-left: 1300px;
+    max-height:88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 10vh;
+    border-radius: 20px;
+    box-shadow: -18px 20px 6px;
+    
+}
+
+.VentanaCarrito::-webkit-scrollbar{
+    display: none;
+}
+.ventanaCarritoHeader{
+    display: flex;
+    font-size: 50px;
+    background-color: #042D00;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.TituloVentanaCarrito{
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    justify-self: start;
+}
+
+.ventanaCarritoBoton{
+    color:#fff;
+    font-size: 20px;
+    margin-top: 30px;
+    &:hover{
+        background-color: #745300;
+        width: 59px;
+        height: 30px;
+        border-radius: 10px;
+    }
+}
+
+.nombrePlantasCarrito{
+    color:#fff
+}
+
+.Precio{
+    color: #fff;
+    
+}
+
+.ventanaCarritoContenido{
+    background-color: #004603;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+
+.ImagenProductosCarrito{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+
+}
+
+.compraTotalVentana{
+    display: flex;
+    justify-content: center;
+    background-color: #745300;
+    color: #fff;
+    width: 100%;
+}
